@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=f, initial-scale=1.0">
+    <title>Create Plan | Let Her Fly</title>
+    <link rel="icon" href="./assets/logo.png" sizes="32x32">
+    <link rel="stylesheet" href="plan.css">
+</head>
+<body>
+    <div class="container">
+        <p>Before anything else, preparation is the key to sucess. 👌</p>
+        
+        <div class="row">
+            <form action="">
+                <div class="input-group">
+                    <input type="text" placeholder="todo-items" id="box">
+                    <input type="button" value="Add" onclick="add_item()" id="add">
+                </div>                
+            </form>
+        </div>
+        <div class="row">
+            <ul id="list_item"></ul>
+        </div>
+        <p>To remove an item from the plan you can select it.</p>
+    </div> 
+    <script>
+        function add_item(){
+            let item = document.getElementById("box")
+            let item_list = document.getElementById("list_item")
+            if(item.value!=""){
+                let make_li= document.createElement("li")
+                make_li.appendChild(document.createTextNode(item.value))
+                item_list.appendChild(make_li)
+                item_list.classList.add("plan")
+                make_li.classList.add("plan-items")
+                
+                item.value=""
+                make_li.onclick=function(){
+                      this.parentNode.removeChild(this)
+
+                }
+
+            }
+            else{
+                alert("Please add something to your list")
+            }
+
+        }
+    </script>
+</body>
+</html>

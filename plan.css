@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    background-color: rgb(41, 41, 41);
+
+}
+
+p{
+    text-align: center;
+    text-decoration: wavy;
+    font-size: 20px;
+}
+.container{
+    margin: 2rem;
+    padding: 2rem;
+    background-color: transparent;
+    backdrop-filter: transparent;
+    border: 2px solid rgb(170, 170, 190);
+    border-radius: 5px;
+    width: 80%;
+    height: fit-content;
+    box-shadow: 2px 2px 2px 2px grey;
+    background-color: rgb(107, 107, 107);
+}
+.input-group{
+   
+    padding: 40px;
+
+}
+
+.plan-items{
+    font-size: 1.2rem;
+    color: #b7c969;
+    list-style-type: none;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(37, 39, 58);
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 5px;
+    width: fit-content;
+
+}
+
+.plan :nth-child(even){
+    color: rgb(0, 149, 248);
+    border: 1px solid rgb(152, 161, 152);
+    background-color: rgb(41, 52, 54);
+    
+}
+#box{
+    width: 60%;
+    padding: 0.5rem ;
+    outline: none;
+    background-color: rgb(44, 44, 44);
+    border: none;
+    color: #b7c969;
+}
+#add{
+    width:15%;
+    padding:0.6rem;
+    background-color: rgb(64, 45, 170);
+    border: none;
+    outline: none;
+    color: white;
+}
+#add:hover{
+    background-color: rgb(120, 74, 238);
+}
+

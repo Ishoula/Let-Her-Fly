@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./assets/image.png);
+    font-size: 18px;
+    color: rgb(192, 188, 188);
+    font-family: 'Karla';
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+button{
+    width: 100px;
+    padding: 0.5rem;
+}
+
+nav{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(153, 143, 143);
+}
+
+a:hover{
+    color: rgb(77, 108, 247);
+    text-decoration: underline;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    margin: 1%;
+}
+li{
+    margin:1rem;
+}
+
+img{
+    width: 40px;
+    height: 40px;
+    
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    width: 250px;
+    height: 20px;
+    padding: 1rem;
+    outline: none;
+    border: none;
+
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+    box-shadow: 5px 5px 5px 5px rgb(59, 59, 59);
+
+
+}
+
+input[type="submit"]{
+    width: 100px;
+    padding: 0.5rem;
+}
+.navbar{
+    background-color: rgb(36, 36, 36);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    top: 0;
+    /* z-index: 999; */
+    position: absolute;
+    width: 100%;
+}
+.main{
+    background-color: rgb(88, 88, 88);
+    margin:  8em auto;
+    max-width: fit-content;
+    height:fit-content;
+    box-shadow: 10px 5px 15px 5px rgb(83, 83, 83);
+    border-radius: 20px ;
+    line-height: 1.8rem;
+    padding: 2rem;
+    
+}
+
+
+.error-message{
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+#btn-submit{
+    margin-top: 1rem;
+    width: 100px;
+    color: rgb(36, 30, 30);
+
+}
+
+#btn-submit:hover{
+    border-radius: 5px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border: none;
+    outline: none;
+}
+#btn:hover{
+    border-radius: 5px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+#btn{
+    margin: 1rem auto;
+} 
+
+
+#check-btn{
+    width: 30px;
+    height: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;;
+}
+
+#logo{
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 2rem;
+}
+
+input.invalid~.error-message{
+    display: block;
+}
+
+@media (min-width:340px)and (max-width:1024px){
+    body{
+        font-size: 16px;
+    }
+    input{
+        width: 50%;
+    }
+    nav{
+        width: 100%;
+    }
+    img{
+        display: none;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .main{
+        width: 80%;
+    } 
+    
+}

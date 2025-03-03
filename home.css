@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+body{
+  font-family: 'Poppins';
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: round;
+}    
+.quote{
+   background-color: rgb(43, 43, 43);
+   width: 100%;
+   height: 300px;
+   padding: 4rem;
+   margin: 0 auto;
+
+  }
+.quote {
+    text-align: center;
+  }
+/* .pics{
+    display: flex;
+    
+}
+.pic{
+    margin: 0.6rem auto;
+    height: 200px;
+} */
+.pics {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    background-color: rgb(91, 93, 94);
+  }
+  
+  .pics div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pic {
+    max-width: 100%; 
+    height: auto;
+  }
+  
+
+#random{
+    display: inline-block;
+}
+
+#random{
+    padding: 1rem;
+    text-transform: uppercase;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 4rem;
+    
+}
+#random:hover{
+    background-color: rgb(94, 94, 94);
+    transition: 30s ease-in;
+}
+#output{
+    text-transform: capitalize;
+    color: #d6c14a;
+    text-align: center;
+    font-size: 20px;
+}
+#motivate{
+    background-color: rgb(91, 93, 94);
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media(max-width:60px){
+    .pics{
+        display: block;
+        margin: 20px auto;
+        
+    }
+}
